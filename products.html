@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>المنتجات | عالم الموكيت للمفروشات</title>
+<meta name="description" content="تصفح تشكيلة عالم الموكيت من السجاد الفاخر، الموكيت، الأرضيات الخشبية، ورق الجدران والستائر."/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link rel="icon" type="image/png" href="assets/img/favicon-32.png"/>
+<link rel="canonical" href="https://aalam-almoquette.netlify.app/products.html"/>
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png"/>
+<link rel="stylesheet" href="assets/css/tailwind-build.css"/>
+<link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col">
+
+<div id="site-header"></div>
+
+<main class="flex-grow pt-24 pb-xl px-margin-mobile md:px-gutter max-w-container-max mx-auto w-full">
+
+  <div class="text-center mb-lg">
+    <h1 class="font-display-lg-mobile md:font-display-lg text-primary mb-sm">تشكيلتنا المميزة</h1>
+    <p class="font-body-lg text-on-surface-variant max-w-2xl mx-auto">اكتشف مجموعتنا الواسعة من السجاد الفاخر، الموكيت، والأرضيات المصممة لتضفي لمسة من الأناقة والفخامة على مساحتك.</p>
+  </div>
+
+  <!-- Filter Chips -->
+  <div id="filter-chips" class="flex flex-wrap justify-center gap-sm mb-lg"></div>
+
+  <!-- Product Grid -->
+  <div id="product-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-md"></div>
+
+  <p id="empty-state" class="hidden text-center text-on-surface-variant font-body-md py-xl">لا توجد منتجات في هذا التصنيف حاليًا.</p>
+
+</main>
+
+<div id="site-footer"></div>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/cart.js"></script>
+<script src="assets/js/layout.js"></script>
+<script>
+  var activeCategory = "all";
+
+  function productCardHTML(p) {
+    var priceLabel = priceHTML(p);
+    var badge = '<div class="absolute top-4 right-4 bg-surface/90 backdrop-blur-sm px-3 py-1 rounded-full font-label-md text-label-md text-secondary">' + p.categoryLabel + '</div>';
+    return (
+      '<div class="bg-surface rounded-xl overflow-hidden ambient-shadow hover-lift flex flex-col h-full border border-outline-variant/20">' +
+        '<a href="product.html?id=' + p.id + '" class="h-64 overflow-hidden relative block">' +
+          '<img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" src="' + p.image + '" alt="' + p.name + '" loading="lazy" decoding="async"/>' +
+          badge +
+        '</a>' +
+        '<div class="p-6 flex flex-col flex-grow text-right">' +
+          '<h3 class="font-headline-sm text-headline-sm text-primary mb-2"><a href="product.html?id=' + p.id + '">' + p.name + '</a></h3>' +
+          (p.color ? '<p class="font-label-md text-label-md text-secondary mb-2">اللون: ' + p.color + '</p>' : '') +
+          '<p class="font-body-md text-on-surface-variant mb-4 flex-grow">' + p.shortDesc + '</p>' +
+          '<div class="flex flex-row-reverse justify-between items-center pt-4 border-t border-outline-variant/10">' +
+            '<span class="font-headline-md text-primary text-[24px]">' + priceLabel + '</span>' +
+            '<a href="product.html?id=' + p.id + '" class="bg-white border border-secondary text-secondary hover:bg-secondary-container hover:text-on-secondary-container px-4 py-2 rounded font-label-md transition-colors">التفاصيل</a>' +
+          '</div>' +
+        '</div>' +
+      '</div>'
+    );
+  }
+
+  function renderChips() {
+    var mount = document.getElementById("filter-chips");
+    mount.innerHTML = CATEGORIES.map(function (c) {
+      var cls = c.id === activeCategory
+        ? "px-6 py-2 rounded-full font-label-md text-label-md bg-primary text-white transition-colors"
+        : "px-6 py-2 rounded-full font-label-md text-label-md bg-[#F5F5DC] text-primary hover:bg-primary-fixed transition-colors";
+      return '<button data-cat="' + c.id + '" class="' + cls + '">' + c.label + "</button>";
+    }).join("");
+    mount.querySelectorAll("button").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        activeCategory = btn.getAttribute("data-cat");
+        renderChips();
+        renderGrid();
+      });
+    });
+  }
+
+  function renderGrid() {
+    var list = activeCategory === "all" ? PRODUCTS : PRODUCTS.filter(function (p) { return p.category === activeCategory; });
+    var grid = document.getElementById("product-grid");
+    var empty = document.getElementById("empty-state");
+    grid.innerHTML = list.map(productCardHTML).join("");
+    empty.classList.toggle("hidden", list.length > 0);
+  }
+
+  // Support ?cat= in URL (e.g. linked from category sliders or services)
+  var params = new URLSearchParams(window.location.search);
+  if (params.get("cat")) {
+    activeCategory = params.get("cat");
+    window.addEventListener("load", function () {
+      document.getElementById("filter-chips").scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  }
+
+  renderChips();
+  renderGrid();
+</script>
+</body>
+</html>

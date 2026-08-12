@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title id="page-title">تفاصيل المنتج | عالم الموكيت للمفروشات</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link rel="icon" type="image/png" href="assets/img/favicon-32.png"/>
+<link rel="canonical" href="https://aalam-almoquette.netlify.app/product.html" id="canonical-link"/>
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png"/>
+<link rel="stylesheet" href="assets/css/tailwind-build.css"/>
+<link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col">
+
+<div id="site-header"></div>
+
+<main class="flex-grow pt-24 pb-xl px-margin-mobile md:px-gutter max-w-container-max mx-auto w-full">
+
+  <nav class="text-body-md text-on-surface-variant mb-md flex items-center gap-1 flex-row-reverse justify-end" id="breadcrumb">
+    <a href="index.html" class="hover:text-secondary">الرئيسية</a>
+    <span class="material-symbols-outlined text-[16px]">chevron_left</span>
+    <a href="products.html" class="hover:text-secondary">المنتجات</a>
+    <span class="material-symbols-outlined text-[16px]">chevron_left</span>
+    <span id="breadcrumb-current" class="text-primary">...</span>
+  </nav>
+
+  <div id="product-detail" class="grid grid-cols-1 md:grid-cols-2 gap-lg mb-xl"></div>
+
+  <section id="related-section" class="mb-xl">
+    <h2 class="font-headline-md text-headline-md text-primary mb-md">منتجات مشابهة</h2>
+    <div id="related-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-md"></div>
+  </section>
+
+  <div id="not-found" class="hidden text-center py-xl">
+    <span class="material-symbols-outlined text-secondary text-[56px]">search_off</span>
+    <h1 class="font-headline-md text-headline-md text-primary mt-md mb-sm">المنتج غير موجود</h1>
+    <p class="font-body-md text-on-surface-variant mb-md">عذرًا، لم نتمكن من العثور على هذا المنتج.</p>
+    <a href="products.html" class="inline-flex items-center gap-2 bg-primary text-white hover:bg-primary-container px-6 py-3 rounded-lg font-label-md transition-colors">تصفح كل المنتجات</a>
+  </div>
+
+</main>
+
+<div id="site-footer"></div>
+
+<!-- Toast -->
+<div id="toast" class="fixed bottom-8 right-1/2 translate-x-1/2 z-[70] bg-primary text-white px-6 py-3 rounded-full font-label-md text-label-md ambient-shadow flex items-center gap-2">
+  <span class="material-symbols-outlined text-[20px]">check_circle</span>
+  <span id="toast-text">تمت الإضافة إلى السلة</span>
+</div>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/cart.js"></script>
+<script src="assets/js/layout.js"></script>
+<script>
+  function showToast(text) {
+    var toast = document.getElementById("toast");
+    document.getElementById("toast-text").textContent = text;
+    toast.classList.add("show");
+    setTimeout(function () { toast.classList.remove("show"); }, 2200);
+  }
+
+  function relatedCardHTML(p) {
+    var priceLabel = priceHTML(p);
+    return (
+      '<div class="bg-surface rounded-xl overflow-hidden ambient-shadow hover-lift flex flex-col h-full border border-outline-variant/20">' +
+        '<a href="product.html?id=' + p.id + '" class="h-48 overflow-hidden relative block">' +
+          '<img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" src="' + p.image + '" alt="' + p.name + '" loading="lazy" decoding="async"/>' +
+        '</a>' +
+        '<div class="p-4 flex flex-col flex-grow text-right">' +
+          '<h3 class="font-headline-sm text-[18px] font-bold text-primary mb-1"><a href="product.html?id=' + p.id + '">' + p.name + '</a></h3>' +
+          '<div class="flex flex-row-reverse justify-between items-center pt-2 mt-auto">' +
+            '<span class="font-headline-md text-primary text-[18px]">' + priceLabel + '</span>' +
+            '<a href="product.html?id=' + p.id + '" class="text-secondary hover:underline font-label-md text-label-md">التفاصيل</a>' +
+          '</div>' +
+        '</div>' +
+      '</div>'
+    );
+  }
+
+  function init() {
+    var params = new URLSearchParams(window.location.search);
+    var id = params.get("id");
+    var product = id ? findProduct(id) : null;
+
+    if (!product) {
+      document.getElementById("product-detail").classList.add("hidden");
+      document.getElementById("related-section").classList.add("hidden");
+      document.getElementById("breadcrumb").classList.add("hidden");
+      document.getElementById("not-found").classList.remove("hidden");
+      return;
+    }
+
+    document.getElementById("page-title").textContent = product.name + " | عالم الموكيت للمفروشات";
+    document.getElementById("breadcrumb-current").textContent = product.name;
+    document.getElementById("canonical-link").setAttribute("href", "https://aalam-almoquette.netlify.app/product.html?id=" + encodeURIComponent(product.id));
+
+    var priceLabel = priceHTML(product);
+    var badge = product.badge ? '<span class="inline-block bg-secondary-container text-on-secondary-container font-label-md text-label-md px-3 py-1 rounded-full mb-sm">' + product.badge + '</span>' : "";
+    var colorHTML = product.color
+      ? '<p class="font-label-md text-label-md text-primary mb-md"><span class="text-secondary">اللون:</span> ' + product.color + '</p>'
+      : "";
+    var sizesHTML = product.sizes && product.sizes.length
+      ? '<div class="mb-md"><p class="font-label-md text-label-md text-primary mb-2">المقاسات المتوفرة:</p><div class="flex flex-wrap gap-2">' +
+          product.sizes.map(function (s) { return '<span class="px-3 py-1 rounded-full bg-[#F5F5DC] text-primary text-body-md">' + s + '</span>'; }).join("") +
+        '</div></div>'
+      : "";
+
+    var gallery = (product.images && product.images.length > 1) ? product.images : [product.image];
+    var thumbsHTML = gallery.length > 1
+      ? '<div class="flex gap-2 mt-3 overflow-x-auto pb-1" id="gallery-thumbs">' +
+          gallery.map(function (src, i) {
+            return '<button data-src="' + src + '" class="gallery-thumb shrink-0 w-16 h-16 rounded-lg overflow-hidden border-2 ' + (i === 0 ? "border-secondary" : "border-transparent") + '"><img class="w-full h-full object-cover" src="' + src + '" alt="' + product.name + ' - صورة ' + (i + 1) + '" loading="lazy" decoding="async"/></button>';
+          }).join("") +
+        "</div>"
+      : "";
+
+    document.getElementById("product-detail").innerHTML =
+      '<div>' +
+        '<div class="rounded-xl overflow-hidden ambient-shadow h-72 md:h-[460px]">' +
+          '<img id="gallery-main-img" class="w-full h-full object-cover" src="' + gallery[0] + '" alt="' + product.name + '" loading="eager" fetchpriority="high" decoding="async"/>' +
+        '</div>' +
+        thumbsHTML +
+      '</div>' +
+      '<div class="text-right">' +
+        badge +
+        '<p class="font-label-md text-label-md text-secondary mb-1">' + product.categoryLabel + '</p>' +
+        '<h1 class="font-headline-md text-headline-md text-primary mb-md">' + product.name + '</h1>' +
+        '<p class="font-headline-md text-primary text-[28px] mb-md">' + priceLabel + '</p>' +
+        '<p class="font-body-md text-on-surface-variant leading-relaxed mb-md">' + product.fullDesc + '</p>' +
+        colorHTML +
+        sizesHTML +
+        '<div class="flex items-center gap-md mb-md">' +
+          '<label class="font-label-md text-label-md text-primary" for="qty-input">الكمية</label>' +
+          '<div class="qty-stepper flex items-center border border-outline-variant rounded-lg overflow-hidden">' +
+            '<button id="qty-minus" type="button" class="w-10 h-10 flex items-center justify-center hover:bg-surface-container-high text-primary" aria-label="إنقاص الكمية">-</button>' +
+            '<input id="qty-input" type="number" min="1" value="1" class="w-14 h-10 text-center border-0 focus:ring-0 font-body-md" />' +
+            '<button id="qty-plus" type="button" class="w-10 h-10 flex items-center justify-center hover:bg-surface-container-high text-primary" aria-label="زيادة الكمية">+</button>' +
+          '</div>' +
+        '</div>' +
+        '<div class="flex flex-wrap gap-sm">' +
+          '<button id="add-to-cart-btn" class="bg-primary text-white hover:bg-primary-container px-8 py-3 rounded-lg font-label-md text-[16px] transition-colors ambient-shadow inline-flex items-center gap-2">' +
+            '<span class="material-symbols-outlined text-[20px]">add_shopping_cart</span>' +
+            'أضف إلى السلة' +
+          '</button>' +
+          '<a href="https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent('أرغب بالاستفسار عن: ' + product.name) + '" target="_blank" rel="noopener" class="bg-white border border-secondary text-secondary hover:bg-secondary-container hover:text-on-secondary-container px-8 py-3 rounded-lg font-label-md text-[16px] transition-colors inline-flex items-center gap-2">' +
+            'استفسار عبر واتساب' +
+          '</a>' +
+        '</div>' +
+      '</div>';
+
+    var thumbButtons = document.querySelectorAll(".gallery-thumb");
+    if (thumbButtons.length) {
+      var mainImg = document.getElementById("gallery-main-img");
+      thumbButtons.forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          mainImg.src = btn.getAttribute("data-src");
+          thumbButtons.forEach(function (b) { b.classList.remove("border-secondary"); b.classList.add("border-transparent"); });
+          btn.classList.remove("border-transparent");
+          btn.classList.add("border-secondary");
+        });
+      });
+    }
+
+    document.getElementById("qty-minus").addEventListener("click", function () {
+      var input = document.getElementById("qty-input");
+      input.value = Math.max(1, parseInt(input.value || "1", 10) - 1);
+    });
+    document.getElementById("qty-plus").addEventListener("click", function () {
+      var input = document.getElementById("qty-input");
+      input.value = parseInt(input.value || "1", 10) + 1;
+    });
+    document.getElementById("add-to-cart-btn").addEventListener("click", function () {
+      var qty = Math.max(1, parseInt(document.getElementById("qty-input").value || "1", 10));
+      addToCart(product.id, qty);
+      showToast("تمت إضافة " + product.name + " إلى السلة");
+    });
+
+    var related = PRODUCTS.filter(function (p) { return p.category === product.category && p.id !== product.id; }).slice(0, 3);
+    if (related.length === 0) related = PRODUCTS.filter(function (p) { return p.id !== product.id; }).slice(0, 3);
+    document.getElementById("related-grid").innerHTML = related.map(relatedCardHTML).join("");
+  }
+
+  document.addEventListener("DOMContentLoaded", init);
+</script>
+</body>
+</html>

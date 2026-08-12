@@ -1,0 +1,181 @@
+body {
+  font-family: "Cairo", sans-serif;
+  background-color: #f9f9f9;
+  overflow-x: hidden;
+}
+
+/* Full-bleed: يمدد العنصر ليأخذ عرض الشاشة كاملاً حتى لو كان أبوه محصور بعرض المحتوى */
+.full-bleed {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
+}
+
+.ambient-shadow {
+  box-shadow: 0 10px 30px -10px rgba(0, 40, 25, 0.08);
+}
+
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -15px rgba(0, 40, 25, 0.12);
+}
+
+/* Navigation Drawer */
+#nav-drawer {
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+}
+#nav-drawer.open {
+  transform: translateX(0);
+}
+#drawer-overlay {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+}
+#drawer-overlay.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Quantity stepper */
+.qty-stepper button {
+  transition: background-color 0.2s ease;
+}
+
+/* Toast */
+#toast {
+  transform: translateY(150%);
+  transition: transform 0.35s ease;
+}
+#toast.show {
+  transform: translateY(0);
+}
+
+/* Skeleton loading shimmer for cart */
+@keyframes shimmer {
+  0% { background-position: -400px 0; }
+  100% { background-position: 400px 0; }
+}
+.shimmer {
+  background: linear-gradient(90deg, #eeeeee 0%, #e2e2e2 50%, #eeeeee 100%);
+  background-size: 800px 100%;
+  animation: shimmer 1.4s infinite linear;
+}
+
+/* Focus visibility for accessibility */
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
+  outline: 2px solid #775a19;
+  outline-offset: 2px;
+}
+
+/* Floating contact widget (FAB) */
+#fab-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+#fab-menu .fab-item {
+  opacity: 0;
+  transform: translateY(12px) scale(0.9);
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  margin-bottom: 12px;
+}
+#fab-menu.fab-menu-open .fab-item {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+#fab-menu.fab-menu-open .fab-item:nth-child(1) { transition-delay: 0.05s; }
+#fab-menu.fab-menu-open .fab-item:nth-child(2) { transition-delay: 0.1s; }
+#fab-menu.fab-menu-open .fab-item:nth-child(3) { transition-delay: 0.15s; }
+#fab-toggle-icon {
+  transition: transform 0.25s ease;
+}
+#fab-toggle[aria-expanded="true"] #fab-toggle-icon {
+  transform: rotate(180deg);
+}
+
+/* Promo slider */
+#promo-slider .promo-slide {
+  display: none;
+}
+#promo-slider .promo-slide.active {
+  display: block;
+  animation: fadeSlide 0.5s ease;
+}
+@keyframes fadeSlide {
+  from { opacity: 0; transform: translateX(8px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+.promo-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.5);
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+.promo-dot.active {
+  width: 22px;
+  background: #ffffff;
+}
+
+/* Hero slider */
+.hero-slide {
+  display: none;
+}
+.hero-slide.active {
+  display: block;
+  animation: fadeSlide 0.6s ease;
+}
+#hero-dots .promo-dot {
+  background: rgba(255,255,255,0.6);
+}
+#hero-dots .promo-dot.active {
+  background: #FED488;
+}
+
+/* Our work slider */
+.our-work-slide {
+  display: none;
+}
+.our-work-slide.active {
+  display: block;
+  animation: fadeSlide 0.5s ease;
+}
+[data-role="dots"] .promo-dot {
+  background: rgba(0,0,0,0.25);
+}
+[data-role="dots"] .promo-dot.active {
+  background: #775a19;
+}
+
+/* Category slider (horizontal scroll-snap) */
+.cat-slider-track {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding-bottom: 8px;
+  -webkit-overflow-scrolling: touch;
+}
+.cat-slider-track::-webkit-scrollbar {
+  height: 6px;
+}
+.cat-slider-track::-webkit-scrollbar-thumb {
+  background: #c0c9c1;
+  border-radius: 999px;
+}
+.cat-slider-track > * {
+  scroll-snap-align: start;
+  flex: 0 0 auto;
+}

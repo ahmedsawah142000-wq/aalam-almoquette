@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>سلة المشتريات | عالم الموكيت للمفروشات</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link rel="icon" type="image/png" href="assets/img/favicon-32.png"/>
+<link rel="canonical" href="https://aalam-almoquette.netlify.app/cart.html"/>
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png"/>
+<link rel="stylesheet" href="assets/css/tailwind-build.css"/>
+<link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col">
+
+<div id="site-header"></div>
+
+<main class="flex-grow pt-24 pb-xl px-margin-mobile md:px-gutter max-w-container-max mx-auto w-full">
+
+  <h1 class="font-display-lg-mobile md:font-display-lg text-primary mb-lg text-right">سلة المشتريات</h1>
+
+  <div id="cart-wrapper" class="grid grid-cols-1 lg:grid-cols-3 gap-lg items-start">
+
+    <div class="lg:col-span-2 flex flex-col gap-md" id="cart-items"></div>
+
+    <aside class="bg-surface rounded-xl ambient-shadow border border-outline-variant/20 p-lg text-right lg:sticky lg:top-24">
+      <h2 class="font-headline-sm text-headline-sm text-primary mb-md">ملخص الطلب</h2>
+      <div class="flex justify-between font-body-md text-on-surface-variant mb-2">
+        <span id="cart-total-value" class="text-primary font-bold"></span>
+        <span>المجموع الفرعي</span>
+      </div>
+      <p class="font-caption text-caption text-on-surface-variant mb-md">التوصيل والتركيب يُحدَّدان بعد التواصل مع فريقنا حسب الموقع والمقاسات.</p>
+      <a id="checkout-btn" href="checkout.html" class="w-full bg-primary text-white hover:bg-primary-container px-8 py-3 rounded-lg font-label-md text-[16px] transition-colors ambient-shadow flex items-center justify-center gap-2">
+        <span class="material-symbols-outlined text-[20px]">arrow_back</span>
+        إتمام الطلب
+      </a>
+      <a href="products.html" class="w-full mt-sm text-secondary hover:underline font-label-md text-label-md flex items-center justify-center gap-1">متابعة التسوق</a>
+    </aside>
+  </div>
+
+  <div id="cart-empty" class="hidden text-center py-xl">
+    <span class="material-symbols-outlined text-secondary text-[56px]">shopping_bag</span>
+    <h2 class="font-headline-md text-headline-md text-primary mt-md mb-sm">سلتك فارغة</h2>
+    <p class="font-body-md text-on-surface-variant mb-md">لم تقم بإضافة أي منتجات بعد. تصفح تشكيلتنا واختر ما يناسبك.</p>
+    <a href="products.html" class="inline-flex items-center gap-2 bg-primary text-white hover:bg-primary-container px-8 py-3 rounded-lg font-label-md transition-colors">تصفح المنتجات</a>
+  </div>
+
+</main>
+
+<div id="site-footer"></div>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/cart.js"></script>
+<script src="assets/js/layout.js"></script>
+<script>
+  function lineHTML(line) {
+    var p = line.product;
+    var priceLabel = formatPrice(p.price) + " " + p.unit;
+    return (
+      '<div class="bg-surface rounded-xl ambient-shadow border border-outline-variant/20 p-md flex gap-md text-right" data-line="' + p.id + '">' +
+        '<a href="product.html?id=' + p.id + '" class="w-24 h-24 md:w-28 md:h-28 shrink-0 rounded-lg overflow-hidden">' +
+          '<img class="w-full h-full object-cover" src="' + p.image + '" alt="' + p.name + '"/>' +
+        '</a>' +
+        '<div class="flex flex-col flex-grow">' +
+          '<div class="flex justify-between items-start">' +
+            '<button class="text-on-surface-variant hover:text-error transition-colors remove-btn" aria-label="حذف" data-id="' + p.id + '"><span class="material-symbols-outlined text-[20px]">delete</span></button>' +
+            '<div>' +
+              '<h3 class="font-headline-sm text-[18px] font-bold text-primary"><a href="product.html?id=' + p.id + '">' + p.name + '</a></h3>' +
+              '<p class="font-caption text-caption text-on-surface-variant">' + p.categoryLabel + '</p>' +
+            '</div>' +
+          '</div>' +
+          '<div class="flex justify-between items-center mt-auto pt-2">' +
+            '<span class="font-headline-sm text-primary text-[18px]">' + formatPrice(line.lineTotal) + ' ر.س</span>' +
+            '<div class="flex items-center gap-md">' +
+              '<span class="font-caption text-caption text-on-surface-variant">' + priceLabel + '</span>' +
+              '<div class="qty-stepper flex items-center border border-outline-variant rounded-lg overflow-hidden">' +
+                '<button class="w-8 h-8 flex items-center justify-center hover:bg-surface-container-high text-primary minus-btn" data-id="' + p.id + '">-</button>' +
+                '<span class="w-8 text-center font-body-md">' + line.qty + '</span>' +
+                '<button class="w-8 h-8 flex items-center justify-center hover:bg-surface-container-high text-primary plus-btn" data-id="' + p.id + '">+</button>' +
+              '</div>' +
+            '</div>' +
+          '</div>' +
+        '</div>' +
+      '</div>'
+    );
+  }
+
+  function render() {
+    var lines = cartLines();
+    var wrapper = document.getElementById("cart-wrapper");
+    var empty = document.getElementById("cart-empty");
+
+    if (lines.length === 0) {
+      wrapper.classList.add("hidden");
+      empty.classList.remove("hidden");
+      return;
+    }
+    wrapper.classList.remove("hidden");
+    empty.classList.add("hidden");
+
+    document.getElementById("cart-items").innerHTML = lines.map(lineHTML).join("");
+    document.getElementById("cart-total-value").textContent = formatPrice(cartSubtotal()) + " ر.س";
+
+    document.querySelectorAll(".remove-btn").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        removeFromCart(btn.getAttribute("data-id"));
+        render();
+      });
+    });
+    document.querySelectorAll(".minus-btn").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var id = btn.getAttribute("data-id");
+        var current = getCart().find(function (i) { return i.id === id; });
+        updateCartQty(id, current ? current.qty - 1 : 0);
+        render();
+      });
+    });
+    document.querySelectorAll(".plus-btn").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var id = btn.getAttribute("data-id");
+        var current = getCart().find(function (i) { return i.id === id; });
+        updateCartQty(id, current ? current.qty + 1 : 1);
+        render();
+      });
+    });
+  }
+
+  render();
+</script>
+</body>
+</html>

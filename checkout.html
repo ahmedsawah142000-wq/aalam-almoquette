@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>إتمام الطلب | عالم الموكيت للمفروشات</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link rel="icon" type="image/png" href="assets/img/favicon-32.png"/>
+<link rel="canonical" href="https://aalam-almoquette.netlify.app/checkout.html"/>
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png"/>
+<link rel="stylesheet" href="assets/css/tailwind-build.css"/>
+<link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col">
+
+<div id="site-header"></div>
+
+<main class="flex-grow pt-24 pb-xl px-margin-mobile md:px-gutter max-w-container-max mx-auto w-full">
+
+  <h1 class="font-display-lg-mobile md:font-display-lg text-primary mb-lg text-right">إتمام الطلب</h1>
+
+  <div id="checkout-wrapper" class="grid grid-cols-1 lg:grid-cols-3 gap-lg items-start">
+
+    <form id="checkout-form" novalidate class="lg:col-span-2 bg-surface rounded-xl ambient-shadow border border-outline-variant/20 p-lg flex flex-col gap-md text-right">
+
+      <h2 class="font-headline-sm text-headline-sm text-primary">بيانات التوصيل</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+        <div>
+          <label class="font-label-md text-label-md text-primary block mb-1" for="fullname">الاسم الكامل</label>
+          <input id="fullname" required type="text" class="w-full border border-primary/30 rounded-lg px-4 py-2.5 font-body-md focus:border-secondary focus:ring-1 focus:ring-secondary text-right" placeholder="اسمك الكامل"/>
+        </div>
+        <div>
+          <label class="font-label-md text-label-md text-primary block mb-1" for="checkout-phone">رقم الجوال</label>
+          <input id="checkout-phone" required type="tel" dir="ltr" class="w-full border border-primary/30 rounded-lg px-4 py-2.5 font-body-md focus:border-secondary focus:ring-1 focus:ring-secondary text-right" placeholder="05xxxxxxxx"/>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+        <div>
+          <label class="font-label-md text-label-md text-primary block mb-1" for="city">المدينة</label>
+          <input id="city" required type="text" class="w-full border border-primary/30 rounded-lg px-4 py-2.5 font-body-md focus:border-secondary focus:ring-1 focus:ring-secondary text-right" placeholder="مثال: الرياض"/>
+        </div>
+        <div>
+          <label class="font-label-md text-label-md text-primary block mb-1" for="district">الحي</label>
+          <input id="district" type="text" class="w-full border border-primary/30 rounded-lg px-4 py-2.5 font-body-md focus:border-secondary focus:ring-1 focus:ring-secondary text-right" placeholder="اسم الحي (اختياري)"/>
+        </div>
+      </div>
+
+      <div>
+        <label class="font-label-md text-label-md text-primary block mb-1" for="address">العنوان التفصيلي</label>
+        <textarea id="address" required rows="3" class="w-full border border-primary/30 rounded-lg px-4 py-2.5 font-body-md focus:border-secondary focus:ring-1 focus:ring-secondary text-right" placeholder="اسم الشارع، رقم المبنى، أقرب معلم..."></textarea>
+      </div>
+
+      <div>
+        <label class="font-label-md text-label-md text-primary block mb-1" for="notes">ملاحظات إضافية</label>
+        <textarea id="notes" rows="2" class="w-full border border-primary/30 rounded-lg px-4 py-2.5 font-body-md focus:border-secondary focus:ring-1 focus:ring-secondary text-right" placeholder="مواعيد التوصيل المفضلة، تفاصيل التركيب... (اختياري)"></textarea>
+      </div>
+
+      <div>
+        <p class="font-label-md text-label-md text-primary mb-2">طريقة إتمام الطلب</p>
+        <div class="bg-[#F5F5DC] rounded-lg p-md flex items-start gap-2">
+          <span class="material-symbols-outlined text-secondary text-[22px]">chat</span>
+          <p class="font-body-md text-on-surface-variant">
+            لضمان دقة المقاسات والتوصيل والتركيب، يقوم فريقنا حاليًا بتأكيد كل طلب وتحديد تكلفة الشحن والدفع عبر واتساب مباشرة بعد إرسال طلبك.
+          </p>
+        </div>
+      </div>
+
+      <button type="submit" class="bg-primary text-white hover:bg-primary-container px-8 py-3 rounded-lg font-label-md text-[16px] transition-colors ambient-shadow flex items-center justify-center gap-2">
+        <span class="material-symbols-outlined text-[20px]">check_circle</span>
+        تأكيد الطلب عبر واتساب
+      </button>
+    </form>
+
+    <aside class="bg-surface rounded-xl ambient-shadow border border-outline-variant/20 p-lg text-right lg:sticky lg:top-24">
+      <h2 class="font-headline-sm text-headline-sm text-primary mb-md">ملخص طلبك</h2>
+      <div id="checkout-summary-lines" class="flex flex-col gap-2 mb-md"></div>
+      <div class="border-t border-outline-variant/20 pt-md flex justify-between font-headline-sm text-headline-sm text-primary">
+        <span id="checkout-total"></span>
+        <span>الإجمالي</span>
+      </div>
+    </aside>
+  </div>
+
+  <div id="checkout-empty" class="hidden text-center py-xl">
+    <span class="material-symbols-outlined text-secondary text-[56px]">shopping_bag</span>
+    <h2 class="font-headline-md text-headline-md text-primary mt-md mb-sm">سلتك فارغة</h2>
+    <p class="font-body-md text-on-surface-variant mb-md">أضف منتجات إلى سلتك أولًا قبل إتمام الطلب.</p>
+    <a href="products.html" class="inline-flex items-center gap-2 bg-primary text-white hover:bg-primary-container px-8 py-3 rounded-lg font-label-md transition-colors">تصفح المنتجات</a>
+  </div>
+
+</main>
+
+<div id="site-footer"></div>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/cart.js"></script>
+<script src="assets/js/layout.js"></script>
+<script src="assets/js/validation.js"></script>
+<script>
+  function init() {
+    var lines = cartLines();
+    if (lines.length === 0) {
+      document.getElementById("checkout-wrapper").classList.add("hidden");
+      document.getElementById("checkout-empty").classList.remove("hidden");
+      return;
+    }
+
+    document.getElementById("checkout-summary-lines").innerHTML = lines.map(function (line) {
+      return (
+        '<div class="flex justify-between font-body-md text-on-surface-variant">' +
+          '<span>' + formatPrice(line.lineTotal) + ' ر.س</span>' +
+          '<span>' + line.product.name + ' × ' + line.qty + '</span>' +
+        '</div>'
+      );
+    }).join("");
+    document.getElementById("checkout-total").textContent = formatPrice(cartSubtotal()) + " ر.س";
+
+    var fullnameInput = document.getElementById("fullname");
+    var phoneInput = document.getElementById("checkout-phone");
+    var cityInput = document.getElementById("city");
+    var districtInput = document.getElementById("district");
+    var addressInput = document.getElementById("address");
+    var notesInput = document.getElementById("notes");
+    var checkoutForm = document.getElementById("checkout-form");
+
+    var checkoutFields = [
+      { input: fullnameInput, rules: { required: true, minLength: 3 } },
+      { input: phoneInput, rules: { required: true, phone: true } },
+      { input: cityInput, rules: { required: true, minLength: 2 } },
+      { input: addressInput, rules: { required: true, minLength: 5 } }
+    ];
+    attachLiveValidation(checkoutFields);
+
+    checkoutForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      if (!validateForm(checkoutFields)) {
+        scrollToFirstError(checkoutForm);
+        return;
+      }
+
+      var fullname = fullnameInput.value.trim();
+      var phone = phoneInput.value.trim();
+      var city = cityInput.value.trim();
+      var district = districtInput.value.trim();
+      var address = addressInput.value.trim();
+      var notes = notesInput.value.trim();
+
+      var orderNumber = "AM-" + Date.now().toString().slice(-6);
+      var siteBase = window.location.origin + window.location.pathname.replace(/checkout\.html$/, "");
+      var linesText = lines.map(function (line) {
+        var imageUrl = siteBase + line.product.image;
+        return "- " + line.product.name + " × " + line.qty + " = " + formatPrice(line.lineTotal) + " ر.س\n  صورة المنتج: " + imageUrl;
+      }).join("\n");
+
+      var message =
+        "طلب جديد رقم " + orderNumber + " من موقع عالم الموكيت:\n\n" +
+        "الاسم: " + fullname + "\n" +
+        "الجوال: " + phone + "\n" +
+        "المدينة: " + city + (district ? " - " + district : "") + "\n" +
+        "العنوان: " + address + "\n" +
+        (notes ? "ملاحظات: " + notes + "\n" : "") +
+        "\nالمنتجات:\n" + linesText + "\n\n" +
+        "الإجمالي: " + formatPrice(cartSubtotal()) + " ر.س";
+
+      sessionStorage.setItem("aalam_almoquette_last_order", JSON.stringify({ orderNumber: orderNumber, total: cartSubtotal() }));
+      window.open("https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(message), "_blank");
+
+      clearCart();
+      window.location.href = "order-success.html?order=" + orderNumber;
+    });
+  }
+
+  document.addEventListener("DOMContentLoaded", init);
+</script>
+</body>
+</html>

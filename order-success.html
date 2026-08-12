@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>تم استلام طلبك | عالم الموكيت للمفروشات</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link rel="icon" type="image/png" href="assets/img/favicon-32.png"/>
+<link rel="canonical" href="https://aalam-almoquette.netlify.app/order-success.html"/>
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png"/>
+<link rel="stylesheet" href="assets/css/tailwind-build.css"/>
+<link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col">
+
+<div id="site-header"></div>
+
+<main class="flex-grow pt-24 pb-xl px-margin-mobile md:px-gutter max-w-container-max mx-auto w-full flex items-center justify-center">
+  <div class="text-center max-w-lg mx-auto py-xl">
+    <span class="material-symbols-outlined text-secondary text-[64px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+    <h1 class="font-headline-md text-headline-md text-primary mt-md mb-sm">تم إرسال طلبك بنجاح!</h1>
+    <p id="order-ref" class="font-label-md text-label-md text-secondary mb-md"></p>
+    <p class="font-body-md text-on-surface-variant mb-lg">
+      شكرًا لثقتكم بعالم الموكيت. فريقنا استلم تفاصيل طلبك عبر واتساب وسيتواصل معكم قريبًا لتأكيد التفاصيل وموعد التوصيل أو التركيب.
+    </p>
+    <div class="flex flex-wrap gap-sm justify-center">
+      <a href="index.html" class="bg-primary text-white hover:bg-primary-container px-8 py-3 rounded-lg font-label-md text-[16px] transition-colors ambient-shadow">
+        العودة للرئيسية
+      </a>
+      <a href="products.html" class="bg-white border border-secondary text-secondary hover:bg-secondary-container hover:text-on-secondary-container px-8 py-3 rounded-lg font-label-md text-[16px] transition-colors">
+        متابعة التسوق
+      </a>
+    </div>
+  </div>
+</main>
+
+<div id="site-footer"></div>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/cart.js"></script>
+<script src="assets/js/layout.js"></script>
+<script>
+  var params = new URLSearchParams(window.location.search);
+  var order = params.get("order");
+  if (order) {
+    document.getElementById("order-ref").textContent = "رقم الطلب: " + order;
+  }
+</script>
+</body>
+</html>
