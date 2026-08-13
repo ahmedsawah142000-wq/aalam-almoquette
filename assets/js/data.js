@@ -1436,7 +1436,7 @@ const PRODUCTS = [
     badge: "25 ريال / متر",
     sizes: ["يُقاس بالمتر حسب مساحة المكان"]
   }
-
+,
 
   {
     id: "silk-moquette-01",
