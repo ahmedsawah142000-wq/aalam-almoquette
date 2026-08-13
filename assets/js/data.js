@@ -987,6 +987,457 @@ const PRODUCTS = [
     sizes: ["يُقاس بالمتر حسب مساحة المنشأة"]
   },
 
+   {
+    id: "vinyl-belgian-6mm-01",
+    name: "فينيل بلچيكي ٦ مللي - موديل 01",
+    category: "vinyl_belgian_6mm",
+    categoryLabel: "فينيل بلچيكي ٦ مللي",
+    price: 40,
+    unit: "ر.س / م",
+    image: "assets/img/products/vinyl-belgian-6mm/vinyl-belgian-6mm-01.webp",
+    color: "متعدد التصاميم",
+    shortDesc: "فينيل بلچيكي ٦ مللي، سعر المتر 40 ريال.",
+    fullDesc: "فينيل بلچيكي ٦ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 40 ريال للمتر.",
+    badge: "40 ريال / متر",
+    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
+  }
+,
+  {
+    id: "vinyl-belgian-6mm-02",
+    name: "فينيل بلچيكي ٦ مللي - موديل 02",
+    category: "vinyl_belgian_6mm",
+    categoryLabel: "فينيل بلچيكي ٦ مللي",
+    price: 40,
+    unit: "ر.س / م",
+    image: "assets/img/products/vinyl-belgian-6mm/vinyl-belgian-6mm-02.webp",
+    color: "متعدد التصاميم",
+    shortDesc: "فينيل بلچيكي ٦ مللي، سعر المتر 40 ريال.",
+    fullDesc: "فينيل بلچيكي ٦ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 40 ريال للمتر.",
+    badge: "40 ريال / متر",
+    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
+  }
+,
+  {
+    id: "vinyl-belgian-6mm-03",
+    name: "فينيل بلچيكي ٦ مللي - موديل 03",
+    category: "vinyl_belgian_6mm",
+    categoryLabel: "فينيل بلچيكي ٦ مللي",
+    price: 40,
+    unit: "ر.س / م",
+    image: "assets/img/products/vinyl-belgian-6mm/vinyl-belgian-6mm-03.webp",
+    color: "متعدد التصاميم",
+    shortDesc: "فينيل بلچيكي ٦ مللي، سعر المتر 40 ريال.",
+    fullDesc: "فينيل بلچيكي ٦ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 40 ريال للمتر.",
+    badge: "40 ريال / متر",
+    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
+  }
+,
+  {
+    id: "vinyl-belgian-6mm-04",
+    name: "فينيل بلچيكي ٦ مللي - موديل 04",
+    category: "vinyl_belgian_6mm",
+    categoryLabel: "فينيل بلچيكي ٦ مللي",
+    price: 40,
+    unit: "ر.س / م",
+    image: "assets/img/products/vinyl-belgian-6mm/vinyl-belgian-6mm-04.webp",
+    color: "متعدد التصاميم",
+    shortDesc: "فينيل بلچيكي ٦ مللي، سعر المتر 40 ريال.",
+    fullDesc: "فينيل بلچيكي ٦ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 40 ريال للمتر.",
+    badge: "40 ريال / متر",
+    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
+  }
+,
+  {
+    id: "vinyl-belgian-6mm-05",
+    name: "فينيل بلچيكي ٦ مللي - موديل 05",
+    category: "vinyl_belgian_6mm",
+    categoryLabel: "فينيل بلچيكي ٦ مللي",
+    price: 40,
+    unit: "ر.س / م",
+    image: "assets/img/products/vinyl-belgian-6mm/vinyl-belgian-6mm-05.webp",
+    color: "متعدد التصاميم",
+    shortDesc: "فينيل بلچيكي ٦ مللي، سعر المتر 40 ريال.",
+    fullDesc: "فينيل بلچيكي ٦ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 40 ريال للمتر.",
+    badge: "40 ريال / متر",
+    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
+  }
+,
+  {
+    id: "vinyl-belgian-6mm-06",
+    name: "فينيل بلچيكي ٦ مللي - موديل 06",
+    category: "vinyl_belgian_6mm",
+    categoryLabel: "فينيل بلچيكي ٦ مللي",
+    price: 40,
+    unit: "ر.س / م",
+    image: "assets/img/products/vinyl-belgian-6mm/vinyl-belgian-6mm-06.webp",
+    color: "متعدد التصاميم",
+    shortDesc: "فينيل بلچيكي ٦ مللي، سعر المتر 40 ريال.",
+    fullDesc: "فينيل بلچيكي ٦ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 40 ريال للمتر.",
+    badge: "40 ريال / متر",
+    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
+  }
+,
+  {
+    id: "vinyl-belgian-6mm-07",
+    name: "فينيل بلچيكي ٦ مللي - موديل 07",
+    category: "vinyl_belgian_6mm",
+    categoryLabel: "فينيل بلچيكي ٦ مللي",
+    price: 40,
+    unit: "ر.س / م",
+    image: "assets/img/products/vinyl-belgian-6mm/vinyl-belgian-6mm-07.webp",
+    color: "متعدد التصاميم",
+    shortDesc: "فينيل بلچيكي ٦ مللي، سعر المتر 40 ريال.",
+    fullDesc: "فينيل بلچيكي ٦ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 40 ريال للمتر.",
+    badge: "40 ريال / متر",
+    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
+  }
+,
+  {
+    id: "vinyl-belgian-6mm-08",
+    name: "فينيل بلچيكي ٦ مللي - موديل 08",
+    category: "vinyl_belgian_6mm",
+    categoryLabel: "فينيل بلچيكي ٦ مللي",
+    price: 40,
+    unit: "ر.س / م",
+    image: "assets/img/products/vinyl-belgian-6mm/vinyl-belgian-6mm-08.webp",
+    color: "متعدد التصاميم",
+    shortDesc: "فينيل بلچيكي ٦ مللي، سعر المتر 40 ريال.",
+    fullDesc: "فينيل بلچيكي ٦ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 40 ريال للمتر.",
+    badge: "40 ريال / متر",
+    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
+  }
+,
+  {
+    id: "vinyl-belgian-6mm-09",
+    name: "فينيل بلچيكي ٦ مللي - موديل 09",
+    category: "vinyl_belgian_6mm",
+    categoryLabel: "فينيل بلچيكي ٦ مللي",
+    price: 40,
+    unit: "ر.س / م",
+    image: "assets/img/products/vinyl-belgian-6mm/vinyl-belgian-6mm-09.webp",
+    color: "متعدد التصاميم",
+    shortDesc: "فينيل بلچيكي ٦ مللي، سعر المتر 40 ريال.",
+    fullDesc: "فينيل بلچيكي ٦ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 40 ريال للمتر.",
+    badge: "40 ريال / متر",
+    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
+  }
+,
+  {
+    id: "vinyl-belgian-6mm-10",
+    name: "فينيل بلچيكي ٦ مللي - موديل 10",
+    category: "vinyl_belgian_6mm",
+    categoryLabel: "فينيل بلچيكي ٦ مللي",
+    price: 40,
+    unit: "ر.س / م",
+    image: "assets/img/products/vinyl-belgian-6mm/vinyl-belgian-6mm-10.webp",
+    color: "متعدد التصاميم",
+    shortDesc: "فينيل بلچيكي ٦ مللي، سعر المتر 40 ريال.",
+    fullDesc: "فينيل بلچيكي ٦ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 40 ريال للمتر.",
+    badge: "40 ريال / متر",
+    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
+  }
+,
+  {
+    id: "vinyl-belgian-6mm-11",
+    name: "فينيل بلچيكي ٦ مللي - موديل 11",
+    category: "vinyl_belgian_6mm",
+    categoryLabel: "فينيل بلچيكي ٦ مللي",
+    price: 40,
+    unit: "ر.س / م",
+    image: "assets/img/products/vinyl-belgian-6mm/vinyl-belgian-6mm-11.webp",
+    color: "متعدد التصاميم",
+    shortDesc: "فينيل بلچيكي ٦ مللي، سعر المتر 40 ريال.",
+    fullDesc: "فينيل بلچيكي ٦ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 40 ريال للمتر.",
+    badge: "40 ريال / متر",
+    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
+  }
+,
+  {
+    id: "vinyl-belgian-6mm-12",
+    name: "فينيل بلچيكي ٦ مللي - موديل 12",
+    category: "vinyl_belgian_6mm",
+    categoryLabel: "فينيل بلچيكي ٦ مللي",
+    price: 40,
+    unit: "ر.س / م",
+    image: "assets/img/products/vinyl-belgian-6mm/vinyl-belgian-6mm-12.webp",
+    color: "متعدد التصاميم",
+    shortDesc: "فينيل بلچيكي ٦ مللي، سعر المتر 40 ريال.",
+    fullDesc: "فينيل بلچيكي ٦ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 40 ريال للمتر.",
+    badge: "40 ريال / متر",
+    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
+  }
+,
+  {
+    id: "vinyl-belgian-6mm-13",
+    name: "فينيل بلچيكي ٦ مللي - موديل 13",
+    category: "vinyl_belgian_6mm",
+    categoryLabel: "فينيل بلچيكي ٦ مللي",
+    price: 40,
+    unit: "ر.س / م",
+    image: "assets/img/products/vinyl-belgian-6mm/vinyl-belgian-6mm-13.webp",
+    color: "متعدد التصاميم",
+    shortDesc: "فينيل بلچيكي ٦ مللي، سعر المتر 40 ريال.",
+    fullDesc: "فينيل بلچيكي ٦ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 40 ريال للمتر.",
+    badge: "40 ريال / متر",
+    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
+  }
+,
+  {
+    id: "vinyl-belgian-plain-3mm-01",
+    name: "فينيل ساده بلچيكي ٣ مللي - موديل 01",
+    category: "vinyl_belgian_plain_3mm",
+    categoryLabel: "فينيل ساده بلچيكي ٣ مللي",
+    price: 25,
+    unit: "ر.س / م",
+    image: "assets/img/products/vinyl-belgian-plain-3mm/vinyl-belgian-plain-3mm-01.webp",
+    color: "متعدد التصاميم",
+    shortDesc: "فينيل ساده بلچيكي ٣ مللي، سعر المتر 25 ريال.",
+    fullDesc: "فينيل ساده بلچيكي ٣ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 25 ريال للمتر.",
+    badge: "25 ريال / متر",
+    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
+  }
+,
+  {
+    id: "vinyl-belgian-plain-3mm-02",
+    name: "فينيل ساده بلچيكي ٣ مللي - موديل 02",
+    category: "vinyl_belgian_plain_3mm",
+    categoryLabel: "فينيل ساده بلچيكي ٣ مللي",
+    price: 25,
+    unit: "ر.س / م",
+    image: "assets/img/products/vinyl-belgian-plain-3mm/vinyl-belgian-plain-3mm-02.webp",
+    color: "متعدد التصاميم",
+    shortDesc: "فينيل ساده بلچيكي ٣ مللي، سعر المتر 25 ريال.",
+    fullDesc: "فينيل ساده بلچيكي ٣ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 25 ريال للمتر.",
+    badge: "25 ريال / متر",
+    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
+  }
+,
+  {
+    id: "vinyl-belgian-plain-3mm-03",
+    name: "فينيل ساده بلچيكي ٣ مللي - موديل 03",
+    category: "vinyl_belgian_plain_3mm",
+    categoryLabel: "فينيل ساده بلچيكي ٣ مللي",
+    price: 25,
+    unit: "ر.س / م",
+    image: "assets/img/products/vinyl-belgian-plain-3mm/vinyl-belgian-plain-3mm-03.webp",
+    color: "متعدد التصاميم",
+    shortDesc: "فينيل ساده بلچيكي ٣ مللي، سعر المتر 25 ريال.",
+    fullDesc: "فينيل ساده بلچيكي ٣ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 25 ريال للمتر.",
+    badge: "25 ريال / متر",
+    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
+  }
+,
+  {
+    id: "vinyl-belgian-plain-3mm-04",
+    name: "فينيل ساده بلچيكي ٣ مللي - موديل 04",
+    category: "vinyl_belgian_plain_3mm",
+    categoryLabel: "فينيل ساده بلچيكي ٣ مللي",
+    price: 25,
+    unit: "ر.س / م",
+    image: "assets/img/products/vinyl-belgian-plain-3mm/vinyl-belgian-plain-3mm-04.webp",
+    color: "متعدد التصاميم",
+    shortDesc: "فينيل ساده بلچيكي ٣ مللي، سعر المتر 25 ريال.",
+    fullDesc: "فينيل ساده بلچيكي ٣ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 25 ريال للمتر.",
+    badge: "25 ريال / متر",
+    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
+  }
+,
+  {
+    id: "vinyl-belgian-plain-3mm-05",
+    name: "فينيل ساده بلچيكي ٣ مللي - موديل 05",
+    category: "vinyl_belgian_plain_3mm",
+    categoryLabel: "فينيل ساده بلچيكي ٣ مللي",
+    price: 25,
+    unit: "ر.س / م",
+    image: "assets/img/products/vinyl-belgian-plain-3mm/vinyl-belgian-plain-3mm-05.webp",
+    color: "متعدد التصاميم",
+    shortDesc: "فينيل ساده بلچيكي ٣ مللي، سعر المتر 25 ريال.",
+    fullDesc: "فينيل ساده بلچيكي ٣ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 25 ريال للمتر.",
+    badge: "25 ريال / متر",
+    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
+  }
+,
+  {
+    id: "vinyl-belgian-plain-3mm-06",
+    name: "فينيل ساده بلچيكي ٣ مللي - موديل 06",
+    category: "vinyl_belgian_plain_3mm",
+    categoryLabel: "فينيل ساده بلچيكي ٣ مللي",
+    price: 25,
+    unit: "ر.س / م",
+    image: "assets/img/products/vinyl-belgian-plain-3mm/vinyl-belgian-plain-3mm-06.webp",
+    color: "متعدد التصاميم",
+    shortDesc: "فينيل ساده بلچيكي ٣ مللي، سعر المتر 25 ريال.",
+    fullDesc: "فينيل ساده بلچيكي ٣ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 25 ريال للمتر.",
+    badge: "25 ريال / متر",
+    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
+  }
+,
+  {
+    id: "vinyl-belgian-plain-3mm-07",
+    name: "فينيل ساده بلچيكي ٣ مللي - موديل 07",
+    category: "vinyl_belgian_plain_3mm",
+    categoryLabel: "فينيل ساده بلچيكي ٣ مللي",
+    price: 25,
+    unit: "ر.س / م",
+    image: "assets/img/products/vinyl-belgian-plain-3mm/vinyl-belgian-plain-3mm-07.webp",
+    color: "متعدد التصاميم",
+    shortDesc: "فينيل ساده بلچيكي ٣ مللي، سعر المتر 25 ريال.",
+    fullDesc: "فينيل ساده بلچيكي ٣ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 25 ريال للمتر.",
+    badge: "25 ريال / متر",
+    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
+  }
+,
+  {
+    id: "vinyl-belgian-plain-3mm-08",
+    name: "فينيل ساده بلچيكي ٣ مللي - موديل 08",
+    category: "vinyl_belgian_plain_3mm",
+    categoryLabel: "فينيل ساده بلچيكي ٣ مللي",
+    price: 25,
+    unit: "ر.س / م",
+    image: "assets/img/products/vinyl-belgian-plain-3mm/vinyl-belgian-plain-3mm-08.webp",
+    color: "متعدد التصاميم",
+    shortDesc: "فينيل ساده بلچيكي ٣ مللي، سعر المتر 25 ريال.",
+    fullDesc: "فينيل ساده بلچيكي ٣ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 25 ريال للمتر.",
+    badge: "25 ريال / متر",
+    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
+  }
+,
+  {
+    id: "vinyl-belgian-plain-3mm-09",
+    name: "فينيل ساده بلچيكي ٣ مللي - موديل 09",
+    category: "vinyl_belgian_plain_3mm",
+    categoryLabel: "فينيل ساده بلچيكي ٣ مللي",
+    price: 25,
+    unit: "ر.س / م",
+    image: "assets/img/products/vinyl-belgian-plain-3mm/vinyl-belgian-plain-3mm-09.webp",
+    color: "متعدد التصاميم",
+    shortDesc: "فينيل ساده بلچيكي ٣ مللي، سعر المتر 25 ريال.",
+    fullDesc: "فينيل ساده بلچيكي ٣ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 25 ريال للمتر.",
+    badge: "25 ريال / متر",
+    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
+  }
+,
+  {
+    id: "vinyl-belgian-plain-3mm-10",
+    name: "فينيل ساده بلچيكي ٣ مللي - موديل 10",
+    category: "vinyl_belgian_plain_3mm",
+    categoryLabel: "فينيل ساده بلچيكي ٣ مللي",
+    price: 25,
+    unit: "ر.س / م",
+    image: "assets/img/products/vinyl-belgian-plain-3mm/vinyl-belgian-plain-3mm-10.webp",
+    color: "متعدد التصاميم",
+    shortDesc: "فينيل ساده بلچيكي ٣ مللي، سعر المتر 25 ريال.",
+    fullDesc: "فينيل ساده بلچيكي ٣ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 25 ريال للمتر.",
+    badge: "25 ريال / متر",
+    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
+  }
+,
+  {
+    id: "vinyl-belgian-plain-3mm-11",
+    name: "فينيل ساده بلچيكي ٣ مللي - موديل 11",
+    category: "vinyl_belgian_plain_3mm",
+    categoryLabel: "فينيل ساده بلچيكي ٣ مللي",
+    price: 25,
+    unit: "ر.س / م",
+    image: "assets/img/products/vinyl-belgian-plain-3mm/vinyl-belgian-plain-3mm-11.webp",
+    color: "متعدد التصاميم",
+    shortDesc: "فينيل ساده بلچيكي ٣ مللي، سعر المتر 25 ريال.",
+    fullDesc: "فينيل ساده بلچيكي ٣ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 25 ريال للمتر.",
+    badge: "25 ريال / متر",
+    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
+  }
+,
+  {
+    id: "vinyl-belgian-plain-3mm-12",
+    name: "فينيل ساده بلچيكي ٣ مللي - موديل 12",
+    category: "vinyl_belgian_plain_3mm",
+    categoryLabel: "فينيل ساده بلچيكي ٣ مللي",
+    price: 25,
+    unit: "ر.س / م",
+    image: "assets/img/products/vinyl-belgian-plain-3mm/vinyl-belgian-plain-3mm-12.webp",
+    color: "متعدد التصاميم",
+    shortDesc: "فينيل ساده بلچيكي ٣ مللي، سعر المتر 25 ريال.",
+    fullDesc: "فينيل ساده بلچيكي ٣ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 25 ريال للمتر.",
+    badge: "25 ريال / متر",
+    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
+  }
+,
+  {
+    id: "vinyl-belgian-plain-3mm-13",
+    name: "فينيل ساده بلچيكي ٣ مللي - موديل 13",
+    category: "vinyl_belgian_plain_3mm",
+    categoryLabel: "فينيل ساده بلچيكي ٣ مللي",
+    price: 25,
+    unit: "ر.س / م",
+    image: "assets/img/products/vinyl-belgian-plain-3mm/vinyl-belgian-plain-3mm-13.webp",
+    color: "متعدد التصاميم",
+    shortDesc: "فينيل ساده بلچيكي ٣ مللي، سعر المتر 25 ريال.",
+    fullDesc: "فينيل ساده بلچيكي ٣ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 25 ريال للمتر.",
+    badge: "25 ريال / متر",
+    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
+  }
+,
+  {
+    id: "vinyl-belgian-plain-3mm-14",
+    name: "فينيل ساده بلچيكي ٣ مللي - موديل 14",
+    category: "vinyl_belgian_plain_3mm",
+    categoryLabel: "فينيل ساده بلچيكي ٣ مللي",
+    price: 25,
+    unit: "ر.س / م",
+    image: "assets/img/products/vinyl-belgian-plain-3mm/vinyl-belgian-plain-3mm-14.webp",
+    color: "متعدد التصاميم",
+    shortDesc: "فينيل ساده بلچيكي ٣ مللي، سعر المتر 25 ريال.",
+    fullDesc: "فينيل ساده بلچيكي ٣ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 25 ريال للمتر.",
+    badge: "25 ريال / متر",
+    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
+  }
+,
+  {
+    id: "vinyl-belgian-plain-3mm-15",
+    name: "فينيل ساده بلچيكي ٣ مللي - موديل 15",
+    category: "vinyl_belgian_plain_3mm",
+    categoryLabel: "فينيل ساده بلچيكي ٣ مللي",
+    price: 25,
+    unit: "ر.س / م",
+    image: "assets/img/products/vinyl-belgian-plain-3mm/vinyl-belgian-plain-3mm-15.webp",
+    color: "متعدد التصاميم",
+    shortDesc: "فينيل ساده بلچيكي ٣ مللي، سعر المتر 25 ريال.",
+    fullDesc: "فينيل ساده بلچيكي ٣ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 25 ريال للمتر.",
+    badge: "25 ريال / متر",
+    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
+  }
+,
+  {
+    id: "vinyl-belgian-plain-3mm-16",
+    name: "فينيل ساده بلچيكي ٣ مللي - موديل 16",
+    category: "vinyl_belgian_plain_3mm",
+    categoryLabel: "فينيل ساده بلچيكي ٣ مللي",
+    price: 25,
+    unit: "ر.س / م",
+    image: "assets/img/products/vinyl-belgian-plain-3mm/vinyl-belgian-plain-3mm-16.webp",
+    color: "متعدد التصاميم",
+    shortDesc: "فينيل ساده بلچيكي ٣ مللي، سعر المتر 25 ريال.",
+    fullDesc: "فينيل ساده بلچيكي ٣ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 25 ريال للمتر.",
+    badge: "25 ريال / متر",
+    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
+  }
+,
+  {
+    id: "vinyl-belgian-plain-3mm-17",
+    name: "فينيل ساده بلچيكي ٣ مللي - موديل 17",
+    category: "vinyl_belgian_plain_3mm",
+    categoryLabel: "فينيل ساده بلچيكي ٣ مللي",
+    price: 25,
+    unit: "ر.س / م",
+    image: "assets/img/products/vinyl-belgian-plain-3mm/vinyl-belgian-plain-3mm-17.webp",
+    color: "متعدد التصاميم",
+    shortDesc: "فينيل ساده بلچيكي ٣ مللي، سعر المتر 25 ريال.",
+    fullDesc: "فينيل ساده بلچيكي ٣ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 25 ريال للمتر.",
+    badge: "25 ريال / متر",
+    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
+  }
+
+
   {
     id: "silk-moquette-01",
     name: "موكيت حرير",
@@ -2424,21 +2875,7 @@ const PRODUCTS = [
     badge: "أرخص سعر",
     sizes: ["يُقاس بالمتر حسب مساحة المكان"]
   },
-  {
-    id: "moquette-korean-01",
-    name: "موكيت نقشات كورية",
-    category: "moquette_4",
-    categoryLabel: "موكيت نقشات كورية",
-    price: 55,
-    priceFrom: true,
-    unit: "ر.س / م",
-    image: "assets/img/products/moquette-korean/moquette-korean-01.webp",
-    color: "متعدد الألوان",
-    shortDesc: "أحدث تشكيلات السوق من الموكيت الكوري بنقشات عصرية، سعر المتر يبدأ من 55 ريال فقط.",
-    fullDesc: "موكيت بنقشات كورية عصرية من أحدث ما وصل للسوق، خامة فاخرة وألوان جذابة تناسب الديكورات العصرية للمجالس والصالات.",
-    badge: "أحدث تشكيلة",
-    sizes: ["يُقاس بالمتر حسب مساحة الغرفة"]
-  },
+  
   {
     id: "moquette-korean-02",
     name: "موكيت نقشات كورية",
@@ -2664,21 +3101,7 @@ const PRODUCTS = [
     badge: "أحدث تشكيلة",
     sizes: ["يُقاس بالمتر حسب مساحة الغرفة"]
   },
-  {
-    id: "moquette-hotel-thick-01",
-    name: "موكيت فندقي سميك فاخر",
-    category: "moquette_5",
-    categoryLabel: "موكيت فندقي سميك فاخر",
-    price: 50,
-    priceFrom: true,
-    unit: "ر.س / م",
-    image: "assets/img/products/moquette-hotel-thick/moquette-hotel-thick-01.webp",
-    color: "متعدد الألوان",
-    shortDesc: "موكيت فندقي سميك فاخر يعطي إحساس فخامة وراحة، أسعار تبدأ من 50 ريال للمتر.",
-    fullDesc: "موكيت فندقي بسماكة عالية وخامة فاخرة، مصمم خصيصًا للفنادق والقاعات والاستقبالات لإضفاء لمسة من الفخامة والراحة تحت الأقدام.",
-    badge: "فخامة فندقية",
-    sizes: ["يُفصّل حسب المساحة"]
-  },
+  
   {
     id: "moquette-hotel-thick-02",
     name: "موكيت فندقي سميك فاخر",
@@ -2859,21 +3282,7 @@ const PRODUCTS = [
     badge: "فخامة فندقية",
     sizes: ["يُفصّل حسب المساحة"]
   },
-  {
-    id: "moquette-hotel-plain-01",
-    name: "موكيت ساده فندقي",
-    category: "moquette_6",
-    categoryLabel: "موكيت ساده فندقي",
-    price: 21,
-    priceFrom: true,
-    unit: "ر.س / م",
-    image: "assets/img/products/moquette-hotel-plain/moquette-hotel-plain-01.webp",
-    color: "متعدد الألوان",
-    shortDesc: "موكيت ساده فندقي بمظهر أنيق وبسيط، سعر المتر يبدأ من 21 ريال.",
-    fullDesc: "موكيت فندقي بتصميم ساده وألوان هادئة تناسب الممرات والصالات والغرف، خامة متينة وسهلة الصيانة بسعر اقتصادي.",
-    badge: "سعر مميز",
-    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
-  },
+  
   {
     id: "moquette-hotel-plain-02",
     name: "موكيت ساده فندقي",
@@ -3114,21 +3523,7 @@ const PRODUCTS = [
     badge: "سعر مميز",
     sizes: ["يُقاس بالمتر حسب مساحة المكان"]
   },
-  {
-    id: "moquette-turkish-french-01",
-    name: "موكيت تركي سميك نقشه فرنسيه",
-    category: "moquette_7",
-    categoryLabel: "موكيت تركي سميك نقشه فرنسيه",
-    price: 48,
-    originalPrice: 55,
-    unit: "ر.س / م",
-    image: "assets/img/products/moquette-turkish-french/moquette-turkish-french-01.webp",
-    color: "متعدد الألوان",
-    shortDesc: "موكيت تركي سميك بنقشة فرنسية أنيقة، سعر المتر 48 ريال فقط بدلاً من 55 ريال.",
-    fullDesc: "موكيت تركي سميك بنقشة فرنسية راقية تضيف لمسة كلاسيكية فاخرة للمكان، خامة متينة وألوان ثابتة، متوفر الآن بسعر عرض خاص.",
-    badge: "عرض خاص",
-    sizes: ["يُقاس بالمتر حسب مساحة الغرفة"]
-  },
+ 
   {
     id: "moquette-turkish-french-02",
     name: "موكيت تركي سميك نقشه فرنسيه",
@@ -3399,21 +3794,7 @@ const PRODUCTS = [
     badge: "عرض خاص",
     sizes: ["يُقاس بالمتر حسب مساحة الغرفة"]
   },
-  {
-    id: "moquette-turkish-french-20",
-    name: "موكيت تركي سميك نقشه فرنسيه",
-    category: "moquette_7",
-    categoryLabel: "موكيت تركي سميك نقشه فرنسيه",
-    price: 48,
-    originalPrice: 55,
-    unit: "ر.س / م",
-    image: "assets/img/products/moquette-turkish-french/moquette-turkish-french-20.webp",
-    color: "كريمي بنقشة ميدالية بيج بني",
-    shortDesc: "موكيت تركي سميك بنقشة فرنسية أنيقة، سعر المتر 48 ريال فقط بدلاً من 55 ريال.",
-    fullDesc: "موكيت تركي سميك بنقشة فرنسية راقية تضيف لمسة كلاسيكية فاخرة للمكان، خامة متينة وألوان ثابتة، متوفر الآن بسعر عرض خاص.",
-    badge: "عرض خاص",
-    sizes: ["يُقاس بالمتر حسب مساحة الغرفة"]
-  },
+ 
   {
     id: "moquette-turkish-premium-01",
     name: "موكيت تركي سميك فاخر",
@@ -3654,21 +4035,7 @@ const PRODUCTS = [
     badge: "تركي الصنع",
     sizes: ["يُقاس بالمتر حسب مساحة الغرفة"]
   },
-  {
-    id: "moquette-turkish-10mm-01",
-    name: "موكيت تركي 10 مللي",
-    category: "moquette_9",
-    categoryLabel: "موكيت تركي 10 مللي",
-    price: 25,
-    priceFrom: true,
-    unit: "ر.س / م",
-    image: "assets/img/products/moquette-turkish-10mm/moquette-turkish-10mm-01.webp",
-    color: "متعدد الألوان",
-    shortDesc: "موكيت تركي سماكة 10 مللي، أسعار تتراوح من 25 حتى 35 ريال للمتر.",
-    fullDesc: "موكيت تركي سماكة 10 مللي، خامة سميكة توفر إحساسًا ناعمًا ودافئًا، مناسب للمجالس والصالات، وتتراوح أسعاره من 25 إلى 35 ريال للمتر حسب النوع.",
-    badge: "تركي الصنع",
-    sizes: ["يُقاس بالمتر حسب مساحة الغرفة"]
-  },
+ 
   {
     id: "moquette-turkish-10mm-02",
     name: "موكيت تركي 10 مللي - موديل 02",
@@ -5340,456 +5707,7 @@ const PRODUCTS = [
     sizes: ["يُقاس بالمتر حسب المساحة"]
   }
 ,
-  {
-    id: "vinyl-belgian-6mm-01",
-    name: "فينيل بلچيكي ٦ مللي - موديل 01",
-    category: "vinyl_belgian_6mm",
-    categoryLabel: "فينيل بلچيكي ٦ مللي",
-    price: 40,
-    unit: "ر.س / م",
-    image: "assets/img/products/vinyl-belgian-6mm/vinyl-belgian-6mm-01.webp",
-    color: "متعدد التصاميم",
-    shortDesc: "فينيل بلچيكي ٦ مللي، سعر المتر 40 ريال.",
-    fullDesc: "فينيل بلچيكي ٦ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 40 ريال للمتر.",
-    badge: "40 ريال / متر",
-    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
-  }
-,
-  {
-    id: "vinyl-belgian-6mm-02",
-    name: "فينيل بلچيكي ٦ مللي - موديل 02",
-    category: "vinyl_belgian_6mm",
-    categoryLabel: "فينيل بلچيكي ٦ مللي",
-    price: 40,
-    unit: "ر.س / م",
-    image: "assets/img/products/vinyl-belgian-6mm/vinyl-belgian-6mm-02.webp",
-    color: "متعدد التصاميم",
-    shortDesc: "فينيل بلچيكي ٦ مللي، سعر المتر 40 ريال.",
-    fullDesc: "فينيل بلچيكي ٦ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 40 ريال للمتر.",
-    badge: "40 ريال / متر",
-    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
-  }
-,
-  {
-    id: "vinyl-belgian-6mm-03",
-    name: "فينيل بلچيكي ٦ مللي - موديل 03",
-    category: "vinyl_belgian_6mm",
-    categoryLabel: "فينيل بلچيكي ٦ مللي",
-    price: 40,
-    unit: "ر.س / م",
-    image: "assets/img/products/vinyl-belgian-6mm/vinyl-belgian-6mm-03.webp",
-    color: "متعدد التصاميم",
-    shortDesc: "فينيل بلچيكي ٦ مللي، سعر المتر 40 ريال.",
-    fullDesc: "فينيل بلچيكي ٦ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 40 ريال للمتر.",
-    badge: "40 ريال / متر",
-    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
-  }
-,
-  {
-    id: "vinyl-belgian-6mm-04",
-    name: "فينيل بلچيكي ٦ مللي - موديل 04",
-    category: "vinyl_belgian_6mm",
-    categoryLabel: "فينيل بلچيكي ٦ مللي",
-    price: 40,
-    unit: "ر.س / م",
-    image: "assets/img/products/vinyl-belgian-6mm/vinyl-belgian-6mm-04.webp",
-    color: "متعدد التصاميم",
-    shortDesc: "فينيل بلچيكي ٦ مللي، سعر المتر 40 ريال.",
-    fullDesc: "فينيل بلچيكي ٦ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 40 ريال للمتر.",
-    badge: "40 ريال / متر",
-    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
-  }
-,
-  {
-    id: "vinyl-belgian-6mm-05",
-    name: "فينيل بلچيكي ٦ مللي - موديل 05",
-    category: "vinyl_belgian_6mm",
-    categoryLabel: "فينيل بلچيكي ٦ مللي",
-    price: 40,
-    unit: "ر.س / م",
-    image: "assets/img/products/vinyl-belgian-6mm/vinyl-belgian-6mm-05.webp",
-    color: "متعدد التصاميم",
-    shortDesc: "فينيل بلچيكي ٦ مللي، سعر المتر 40 ريال.",
-    fullDesc: "فينيل بلچيكي ٦ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 40 ريال للمتر.",
-    badge: "40 ريال / متر",
-    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
-  }
-,
-  {
-    id: "vinyl-belgian-6mm-06",
-    name: "فينيل بلچيكي ٦ مللي - موديل 06",
-    category: "vinyl_belgian_6mm",
-    categoryLabel: "فينيل بلچيكي ٦ مللي",
-    price: 40,
-    unit: "ر.س / م",
-    image: "assets/img/products/vinyl-belgian-6mm/vinyl-belgian-6mm-06.webp",
-    color: "متعدد التصاميم",
-    shortDesc: "فينيل بلچيكي ٦ مللي، سعر المتر 40 ريال.",
-    fullDesc: "فينيل بلچيكي ٦ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 40 ريال للمتر.",
-    badge: "40 ريال / متر",
-    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
-  }
-,
-  {
-    id: "vinyl-belgian-6mm-07",
-    name: "فينيل بلچيكي ٦ مللي - موديل 07",
-    category: "vinyl_belgian_6mm",
-    categoryLabel: "فينيل بلچيكي ٦ مللي",
-    price: 40,
-    unit: "ر.س / م",
-    image: "assets/img/products/vinyl-belgian-6mm/vinyl-belgian-6mm-07.webp",
-    color: "متعدد التصاميم",
-    shortDesc: "فينيل بلچيكي ٦ مللي، سعر المتر 40 ريال.",
-    fullDesc: "فينيل بلچيكي ٦ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 40 ريال للمتر.",
-    badge: "40 ريال / متر",
-    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
-  }
-,
-  {
-    id: "vinyl-belgian-6mm-08",
-    name: "فينيل بلچيكي ٦ مللي - موديل 08",
-    category: "vinyl_belgian_6mm",
-    categoryLabel: "فينيل بلچيكي ٦ مللي",
-    price: 40,
-    unit: "ر.س / م",
-    image: "assets/img/products/vinyl-belgian-6mm/vinyl-belgian-6mm-08.webp",
-    color: "متعدد التصاميم",
-    shortDesc: "فينيل بلچيكي ٦ مللي، سعر المتر 40 ريال.",
-    fullDesc: "فينيل بلچيكي ٦ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 40 ريال للمتر.",
-    badge: "40 ريال / متر",
-    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
-  }
-,
-  {
-    id: "vinyl-belgian-6mm-09",
-    name: "فينيل بلچيكي ٦ مللي - موديل 09",
-    category: "vinyl_belgian_6mm",
-    categoryLabel: "فينيل بلچيكي ٦ مللي",
-    price: 40,
-    unit: "ر.س / م",
-    image: "assets/img/products/vinyl-belgian-6mm/vinyl-belgian-6mm-09.webp",
-    color: "متعدد التصاميم",
-    shortDesc: "فينيل بلچيكي ٦ مللي، سعر المتر 40 ريال.",
-    fullDesc: "فينيل بلچيكي ٦ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 40 ريال للمتر.",
-    badge: "40 ريال / متر",
-    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
-  }
-,
-  {
-    id: "vinyl-belgian-6mm-10",
-    name: "فينيل بلچيكي ٦ مللي - موديل 10",
-    category: "vinyl_belgian_6mm",
-    categoryLabel: "فينيل بلچيكي ٦ مللي",
-    price: 40,
-    unit: "ر.س / م",
-    image: "assets/img/products/vinyl-belgian-6mm/vinyl-belgian-6mm-10.webp",
-    color: "متعدد التصاميم",
-    shortDesc: "فينيل بلچيكي ٦ مللي، سعر المتر 40 ريال.",
-    fullDesc: "فينيل بلچيكي ٦ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 40 ريال للمتر.",
-    badge: "40 ريال / متر",
-    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
-  }
-,
-  {
-    id: "vinyl-belgian-6mm-11",
-    name: "فينيل بلچيكي ٦ مللي - موديل 11",
-    category: "vinyl_belgian_6mm",
-    categoryLabel: "فينيل بلچيكي ٦ مللي",
-    price: 40,
-    unit: "ر.س / م",
-    image: "assets/img/products/vinyl-belgian-6mm/vinyl-belgian-6mm-11.webp",
-    color: "متعدد التصاميم",
-    shortDesc: "فينيل بلچيكي ٦ مللي، سعر المتر 40 ريال.",
-    fullDesc: "فينيل بلچيكي ٦ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 40 ريال للمتر.",
-    badge: "40 ريال / متر",
-    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
-  }
-,
-  {
-    id: "vinyl-belgian-6mm-12",
-    name: "فينيل بلچيكي ٦ مللي - موديل 12",
-    category: "vinyl_belgian_6mm",
-    categoryLabel: "فينيل بلچيكي ٦ مللي",
-    price: 40,
-    unit: "ر.س / م",
-    image: "assets/img/products/vinyl-belgian-6mm/vinyl-belgian-6mm-12.webp",
-    color: "متعدد التصاميم",
-    shortDesc: "فينيل بلچيكي ٦ مللي، سعر المتر 40 ريال.",
-    fullDesc: "فينيل بلچيكي ٦ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 40 ريال للمتر.",
-    badge: "40 ريال / متر",
-    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
-  }
-,
-  {
-    id: "vinyl-belgian-6mm-13",
-    name: "فينيل بلچيكي ٦ مللي - موديل 13",
-    category: "vinyl_belgian_6mm",
-    categoryLabel: "فينيل بلچيكي ٦ مللي",
-    price: 40,
-    unit: "ر.س / م",
-    image: "assets/img/products/vinyl-belgian-6mm/vinyl-belgian-6mm-13.webp",
-    color: "متعدد التصاميم",
-    shortDesc: "فينيل بلچيكي ٦ مللي، سعر المتر 40 ريال.",
-    fullDesc: "فينيل بلچيكي ٦ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 40 ريال للمتر.",
-    badge: "40 ريال / متر",
-    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
-  }
-,
-  {
-    id: "vinyl-belgian-plain-3mm-01",
-    name: "فينيل ساده بلچيكي ٣ مللي - موديل 01",
-    category: "vinyl_belgian_plain_3mm",
-    categoryLabel: "فينيل ساده بلچيكي ٣ مللي",
-    price: 25,
-    unit: "ر.س / م",
-    image: "assets/img/products/vinyl-belgian-plain-3mm/vinyl-belgian-plain-3mm-01.webp",
-    color: "متعدد التصاميم",
-    shortDesc: "فينيل ساده بلچيكي ٣ مللي، سعر المتر 25 ريال.",
-    fullDesc: "فينيل ساده بلچيكي ٣ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 25 ريال للمتر.",
-    badge: "25 ريال / متر",
-    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
-  }
-,
-  {
-    id: "vinyl-belgian-plain-3mm-02",
-    name: "فينيل ساده بلچيكي ٣ مللي - موديل 02",
-    category: "vinyl_belgian_plain_3mm",
-    categoryLabel: "فينيل ساده بلچيكي ٣ مللي",
-    price: 25,
-    unit: "ر.س / م",
-    image: "assets/img/products/vinyl-belgian-plain-3mm/vinyl-belgian-plain-3mm-02.webp",
-    color: "متعدد التصاميم",
-    shortDesc: "فينيل ساده بلچيكي ٣ مللي، سعر المتر 25 ريال.",
-    fullDesc: "فينيل ساده بلچيكي ٣ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 25 ريال للمتر.",
-    badge: "25 ريال / متر",
-    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
-  }
-,
-  {
-    id: "vinyl-belgian-plain-3mm-03",
-    name: "فينيل ساده بلچيكي ٣ مللي - موديل 03",
-    category: "vinyl_belgian_plain_3mm",
-    categoryLabel: "فينيل ساده بلچيكي ٣ مللي",
-    price: 25,
-    unit: "ر.س / م",
-    image: "assets/img/products/vinyl-belgian-plain-3mm/vinyl-belgian-plain-3mm-03.webp",
-    color: "متعدد التصاميم",
-    shortDesc: "فينيل ساده بلچيكي ٣ مللي، سعر المتر 25 ريال.",
-    fullDesc: "فينيل ساده بلچيكي ٣ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 25 ريال للمتر.",
-    badge: "25 ريال / متر",
-    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
-  }
-,
-  {
-    id: "vinyl-belgian-plain-3mm-04",
-    name: "فينيل ساده بلچيكي ٣ مللي - موديل 04",
-    category: "vinyl_belgian_plain_3mm",
-    categoryLabel: "فينيل ساده بلچيكي ٣ مللي",
-    price: 25,
-    unit: "ر.س / م",
-    image: "assets/img/products/vinyl-belgian-plain-3mm/vinyl-belgian-plain-3mm-04.webp",
-    color: "متعدد التصاميم",
-    shortDesc: "فينيل ساده بلچيكي ٣ مللي، سعر المتر 25 ريال.",
-    fullDesc: "فينيل ساده بلچيكي ٣ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 25 ريال للمتر.",
-    badge: "25 ريال / متر",
-    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
-  }
-,
-  {
-    id: "vinyl-belgian-plain-3mm-05",
-    name: "فينيل ساده بلچيكي ٣ مللي - موديل 05",
-    category: "vinyl_belgian_plain_3mm",
-    categoryLabel: "فينيل ساده بلچيكي ٣ مللي",
-    price: 25,
-    unit: "ر.س / م",
-    image: "assets/img/products/vinyl-belgian-plain-3mm/vinyl-belgian-plain-3mm-05.webp",
-    color: "متعدد التصاميم",
-    shortDesc: "فينيل ساده بلچيكي ٣ مللي، سعر المتر 25 ريال.",
-    fullDesc: "فينيل ساده بلچيكي ٣ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 25 ريال للمتر.",
-    badge: "25 ريال / متر",
-    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
-  }
-,
-  {
-    id: "vinyl-belgian-plain-3mm-06",
-    name: "فينيل ساده بلچيكي ٣ مللي - موديل 06",
-    category: "vinyl_belgian_plain_3mm",
-    categoryLabel: "فينيل ساده بلچيكي ٣ مللي",
-    price: 25,
-    unit: "ر.س / م",
-    image: "assets/img/products/vinyl-belgian-plain-3mm/vinyl-belgian-plain-3mm-06.webp",
-    color: "متعدد التصاميم",
-    shortDesc: "فينيل ساده بلچيكي ٣ مللي، سعر المتر 25 ريال.",
-    fullDesc: "فينيل ساده بلچيكي ٣ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 25 ريال للمتر.",
-    badge: "25 ريال / متر",
-    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
-  }
-,
-  {
-    id: "vinyl-belgian-plain-3mm-07",
-    name: "فينيل ساده بلچيكي ٣ مللي - موديل 07",
-    category: "vinyl_belgian_plain_3mm",
-    categoryLabel: "فينيل ساده بلچيكي ٣ مللي",
-    price: 25,
-    unit: "ر.س / م",
-    image: "assets/img/products/vinyl-belgian-plain-3mm/vinyl-belgian-plain-3mm-07.webp",
-    color: "متعدد التصاميم",
-    shortDesc: "فينيل ساده بلچيكي ٣ مللي، سعر المتر 25 ريال.",
-    fullDesc: "فينيل ساده بلچيكي ٣ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 25 ريال للمتر.",
-    badge: "25 ريال / متر",
-    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
-  }
-,
-  {
-    id: "vinyl-belgian-plain-3mm-08",
-    name: "فينيل ساده بلچيكي ٣ مللي - موديل 08",
-    category: "vinyl_belgian_plain_3mm",
-    categoryLabel: "فينيل ساده بلچيكي ٣ مللي",
-    price: 25,
-    unit: "ر.س / م",
-    image: "assets/img/products/vinyl-belgian-plain-3mm/vinyl-belgian-plain-3mm-08.webp",
-    color: "متعدد التصاميم",
-    shortDesc: "فينيل ساده بلچيكي ٣ مللي، سعر المتر 25 ريال.",
-    fullDesc: "فينيل ساده بلچيكي ٣ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 25 ريال للمتر.",
-    badge: "25 ريال / متر",
-    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
-  }
-,
-  {
-    id: "vinyl-belgian-plain-3mm-09",
-    name: "فينيل ساده بلچيكي ٣ مللي - موديل 09",
-    category: "vinyl_belgian_plain_3mm",
-    categoryLabel: "فينيل ساده بلچيكي ٣ مللي",
-    price: 25,
-    unit: "ر.س / م",
-    image: "assets/img/products/vinyl-belgian-plain-3mm/vinyl-belgian-plain-3mm-09.webp",
-    color: "متعدد التصاميم",
-    shortDesc: "فينيل ساده بلچيكي ٣ مللي، سعر المتر 25 ريال.",
-    fullDesc: "فينيل ساده بلچيكي ٣ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 25 ريال للمتر.",
-    badge: "25 ريال / متر",
-    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
-  }
-,
-  {
-    id: "vinyl-belgian-plain-3mm-10",
-    name: "فينيل ساده بلچيكي ٣ مللي - موديل 10",
-    category: "vinyl_belgian_plain_3mm",
-    categoryLabel: "فينيل ساده بلچيكي ٣ مللي",
-    price: 25,
-    unit: "ر.س / م",
-    image: "assets/img/products/vinyl-belgian-plain-3mm/vinyl-belgian-plain-3mm-10.webp",
-    color: "متعدد التصاميم",
-    shortDesc: "فينيل ساده بلچيكي ٣ مللي، سعر المتر 25 ريال.",
-    fullDesc: "فينيل ساده بلچيكي ٣ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 25 ريال للمتر.",
-    badge: "25 ريال / متر",
-    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
-  }
-,
-  {
-    id: "vinyl-belgian-plain-3mm-11",
-    name: "فينيل ساده بلچيكي ٣ مللي - موديل 11",
-    category: "vinyl_belgian_plain_3mm",
-    categoryLabel: "فينيل ساده بلچيكي ٣ مللي",
-    price: 25,
-    unit: "ر.س / م",
-    image: "assets/img/products/vinyl-belgian-plain-3mm/vinyl-belgian-plain-3mm-11.webp",
-    color: "متعدد التصاميم",
-    shortDesc: "فينيل ساده بلچيكي ٣ مللي، سعر المتر 25 ريال.",
-    fullDesc: "فينيل ساده بلچيكي ٣ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 25 ريال للمتر.",
-    badge: "25 ريال / متر",
-    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
-  }
-,
-  {
-    id: "vinyl-belgian-plain-3mm-12",
-    name: "فينيل ساده بلچيكي ٣ مللي - موديل 12",
-    category: "vinyl_belgian_plain_3mm",
-    categoryLabel: "فينيل ساده بلچيكي ٣ مللي",
-    price: 25,
-    unit: "ر.س / م",
-    image: "assets/img/products/vinyl-belgian-plain-3mm/vinyl-belgian-plain-3mm-12.webp",
-    color: "متعدد التصاميم",
-    shortDesc: "فينيل ساده بلچيكي ٣ مللي، سعر المتر 25 ريال.",
-    fullDesc: "فينيل ساده بلچيكي ٣ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 25 ريال للمتر.",
-    badge: "25 ريال / متر",
-    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
-  }
-,
-  {
-    id: "vinyl-belgian-plain-3mm-13",
-    name: "فينيل ساده بلچيكي ٣ مللي - موديل 13",
-    category: "vinyl_belgian_plain_3mm",
-    categoryLabel: "فينيل ساده بلچيكي ٣ مللي",
-    price: 25,
-    unit: "ر.س / م",
-    image: "assets/img/products/vinyl-belgian-plain-3mm/vinyl-belgian-plain-3mm-13.webp",
-    color: "متعدد التصاميم",
-    shortDesc: "فينيل ساده بلچيكي ٣ مللي، سعر المتر 25 ريال.",
-    fullDesc: "فينيل ساده بلچيكي ٣ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 25 ريال للمتر.",
-    badge: "25 ريال / متر",
-    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
-  }
-,
-  {
-    id: "vinyl-belgian-plain-3mm-14",
-    name: "فينيل ساده بلچيكي ٣ مللي - موديل 14",
-    category: "vinyl_belgian_plain_3mm",
-    categoryLabel: "فينيل ساده بلچيكي ٣ مللي",
-    price: 25,
-    unit: "ر.س / م",
-    image: "assets/img/products/vinyl-belgian-plain-3mm/vinyl-belgian-plain-3mm-14.webp",
-    color: "متعدد التصاميم",
-    shortDesc: "فينيل ساده بلچيكي ٣ مللي، سعر المتر 25 ريال.",
-    fullDesc: "فينيل ساده بلچيكي ٣ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 25 ريال للمتر.",
-    badge: "25 ريال / متر",
-    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
-  }
-,
-  {
-    id: "vinyl-belgian-plain-3mm-15",
-    name: "فينيل ساده بلچيكي ٣ مللي - موديل 15",
-    category: "vinyl_belgian_plain_3mm",
-    categoryLabel: "فينيل ساده بلچيكي ٣ مللي",
-    price: 25,
-    unit: "ر.س / م",
-    image: "assets/img/products/vinyl-belgian-plain-3mm/vinyl-belgian-plain-3mm-15.webp",
-    color: "متعدد التصاميم",
-    shortDesc: "فينيل ساده بلچيكي ٣ مللي، سعر المتر 25 ريال.",
-    fullDesc: "فينيل ساده بلچيكي ٣ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 25 ريال للمتر.",
-    badge: "25 ريال / متر",
-    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
-  }
-,
-  {
-    id: "vinyl-belgian-plain-3mm-16",
-    name: "فينيل ساده بلچيكي ٣ مللي - موديل 16",
-    category: "vinyl_belgian_plain_3mm",
-    categoryLabel: "فينيل ساده بلچيكي ٣ مللي",
-    price: 25,
-    unit: "ر.س / م",
-    image: "assets/img/products/vinyl-belgian-plain-3mm/vinyl-belgian-plain-3mm-16.webp",
-    color: "متعدد التصاميم",
-    shortDesc: "فينيل ساده بلچيكي ٣ مللي، سعر المتر 25 ريال.",
-    fullDesc: "فينيل ساده بلچيكي ٣ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 25 ريال للمتر.",
-    badge: "25 ريال / متر",
-    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
-  }
-,
-  {
-    id: "vinyl-belgian-plain-3mm-17",
-    name: "فينيل ساده بلچيكي ٣ مللي - موديل 17",
-    category: "vinyl_belgian_plain_3mm",
-    categoryLabel: "فينيل ساده بلچيكي ٣ مللي",
-    price: 25,
-    unit: "ر.س / م",
-    image: "assets/img/products/vinyl-belgian-plain-3mm/vinyl-belgian-plain-3mm-17.webp",
-    color: "متعدد التصاميم",
-    shortDesc: "فينيل ساده بلچيكي ٣ مللي، سعر المتر 25 ريال.",
-    fullDesc: "فينيل ساده بلچيكي ٣ مللي بتصاميم متنوعة، مناسب للأرضيات والاستخدامات الداخلية، بسعر 25 ريال للمتر.",
-    badge: "25 ريال / متر",
-    sizes: ["يُقاس بالمتر حسب مساحة المكان"]
-  }
-
+  
 ];
 
 const CATEGORIES = [
