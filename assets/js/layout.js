@@ -142,7 +142,7 @@ function renderFooter() {
           '<span class="bg-[#25D366] text-white text-sm font-label-md px-3 py-1.5 rounded-lg shadow-md whitespace-nowrap">WhatsApp widget</span>' +
           '<span class="bg-[#25D366] text-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg shrink-0"><span class="material-symbols-outlined" style="font-variation-settings: \'FILL\' 1;">chat</span></span>' +
         '</a>' +
-        '<a href="https://www.google.com/maps?q=24.597314,46.731202(%D8%B9%D8%A7%D9%84%D9%85%20%D8%A7%D9%84%D9%85%D9%88%D9%83%D9%8A%D8%AA%20%D9%84%D9%84%D9%85%D9%81%D8%B1%D9%88%D8%B4%D8%A7%D8%AA)" target="_blank" rel="noopener" class="fab-item flex items-center gap-3 justify-end" aria-label="موقعنا على الخريطة">' +
+        '<a href="https://www.google.com/maps?q=24.597306,46.731194(%D8%B9%D8%A7%D9%84%D9%85%20%D8%A7%D9%84%D9%85%D9%88%D9%83%D9%8A%D8%AA%20%D9%84%D9%84%D9%85%D9%81%D8%B1%D9%88%D8%B4%D8%A7%D8%AA)" target="_blank" rel="noopener" class="fab-item flex items-center gap-3 justify-end" aria-label="موقعنا على الخريطة">' +
           '<span class="bg-[#2b2b2b] text-white text-sm font-label-md px-3 py-1.5 rounded-lg shadow-md whitespace-nowrap">موقعنا علي الخريطة</span>' +
           '<span class="bg-[#F5820D] text-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg shrink-0"><span class="material-symbols-outlined" style="font-variation-settings: \'FILL\' 1;">map</span></span>' +
         '</a>' +
