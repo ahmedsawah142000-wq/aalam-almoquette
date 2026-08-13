@@ -4997,17 +4997,17 @@ const PRODUCTS = [
     sizes: ["يُقاس بالمتر حسب مساحة الجدار"]
   },
   {
-    id: "parquet-sps-01",
-    name: "باركيه SPS خشب تُركي - موديل 01",
-    category: "parquet_sps",
-    categoryLabel: "باركيه SPS خشب تُركي",
+    id: "parquet-spc-01",
+    name: "باركيه SPC خشب تُركي - موديل 01",
+    category: "parquet_spc",
+    categoryLabel: "باركيه SPC خشب تُركي",
     price: 65,
     priceFrom: true,
     unit: "ر.س / م",
     image: "assets/img/products/parquet-sps/parquet-sps-01.webp",
     color: "خشبي",
-    shortDesc: "باركيه SPS خشب تُركي، سعر المتر يبدأ من 65 ريال مع التركيب.",
-    fullDesc: "باركيه SPS خشب تُركي بتصاميم خشبية متنوعة، مناسب للمنازل والمكاتب والمساحات الداخلية، بسعر يبدأ من 65 ريال للمتر مع التركيب.",
+    shortDesc: "باركيه SPC خشب تُركي، سعر المتر يبدأ من 65 ريال مع التركيب.",
+    fullDesc: "باركيه SPC خشب تُركي بتصاميم خشبية متنوعة، مناسب للمنازل والمكاتب والمساحات الداخلية، بسعر يبدأ من 65 ريال للمتر مع التركيب.",
     badge: "65 ريال مع التركيب",
     sizes: ["يُقاس بالمتر حسب مساحة المكان"]
   }
@@ -5728,11 +5728,11 @@ const CATEGORIES_EXTRA = [
   { id: "moquette_6", label: "موكيت ساده فندقي" },
   { id: "moquette_7", label: "موكيت تركي سميك نقشة فرنسية" },
   { id: "moquette_8", label: "موكيت تركي سميك فاخر" },
-  { id: "moquette_9", label: "موكيت تركي 10 مللي" },
+  { id: "moquette_9", label: "موكيت تركي 12 مللي" },
   { id: "moquette_10", label: "موكيت سَدوو شعبي" },
   { id: "moquette_11", label: "موكيت وفينيل أطفالي" },
   { id: "moquette_12", label: "نعلات جدار فيبر" },
-  { id: "parquet_sps", label: "باركيه SPS خشب تُركي" },
+  { id: "parquet_spc", label: "باركيه SPC خشب تُركي" },
   { id: "office_carpet_tiles", label: "بلاط مكتبي للشركات والمكاتب والمؤسسات" },
   { id: "artificial_grass", label: "زراعي، نجيله للأسطُح والملاعب" } ,
   { id: "vinyl_belgian_6mm", label: "فينيل بلچيكي ٦ مللي" }
