@@ -3795,21 +3795,7 @@ const PRODUCTS = [
     sizes: ["يُقاس بالمتر حسب مساحة الغرفة"]
   },
  
-  {
-    id: "moquette-turkish-premium-01",
-    name: "موكيت تركي سميك فاخر",
-    category: "moquette_8",
-    categoryLabel: "موكيت تركي سميك فاخر",
-    price: 45,
-    priceFrom: true,
-    unit: "ر.س / م",
-    image: "assets/img/products/moquette-turkish-premium/moquette-turkish-premium-01.webp",
-    color: "متعدد الألوان",
-    shortDesc: "موكيت تركي سميك فاخر بجودة عالية، أسعار تتراوح من 45 حتى 70 ريال للمتر المربع حسب النوع.",
-    fullDesc: "موكيت تركي سميك فاخر، خامة تركية أصلية بجودة نسج عالية ومتانة تدوم طويلاً، يتوفر بعدة درجات جودة وأسعار من 45 إلى 70 ريال للمتر المربع حسب النوع والتصميم المختار.",
-    badge: "تركي الصنع",
-    sizes: ["يُقاس بالمتر حسب مساحة الغرفة"]
-  },
+ 
   {
     id: "moquette-turkish-premium-02",
     name: "موكيت تركي سميك فاخر",
