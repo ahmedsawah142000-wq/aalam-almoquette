@@ -4044,7 +4044,7 @@ const PRODUCTS = [
     price: 25,
     priceFrom: true,
     unit: "ر.س / م",
-    image: "assets/img/products/moquette-turkish-10mm/moquette-turkish-12mm-02.webp",
+    image: "assets/img/products/moquette-turkish-10mm/moquette-turkish-10mm-02.webp",
     color: "متعدد الألوان",
     shortDesc: "موكيت تركي سماكة 12 مللي، خامة سميكة وناعمة مناسبة للمجالس والصالات، مع تصميمات متنوعة.",
     fullDesc: "موكيت تركي سماكة 12 مللي بخامة سميكة ومريحة، مناسب للمجالس والصالات والاستخدام المنزلي، ويتوفر بتصميمات وألوان متنوعة.",
